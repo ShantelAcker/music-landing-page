@@ -1,0 +1,125 @@
+/* join only styles */
+
+/* billboard text styles */
+.join-main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.join-text {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.accent-text {
+    color: #BC3A80;
+}
+
+/*input form styles */
+.join-form {
+    background-color: #050022;
+    width: 50vw;
+    max-width: 50%;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* removing extra space at the bottom of the form 
+in this case, for the button*/
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+.input-group input {
+    outline: none;
+    background: none;
+    border: 1.7px solid #1762A7;
+    font-size: 1em;
+    padding: .5em;
+    color: inherit;
+    border-radius: 5px;
+}
+
+/* make the border slightly brighter when you click or tab over to it */
+.input-group input:focus {
+    border-color: #289de0;
+}
+
+@media (max-width: 900px) {
+    .join-main-section {
+        flex-direction: column;
+        justify-context: center;
+    }
+    
+    .join-form {
+        width: 80vw;
+        max-width: inherit; /* will inherit from the width */
+        margin: 2rem 0;
+    }
+
+    .join-text {
+        text-align: center;
+    }
+}
+
+.join-page-circle-1 {
+    position: absolute;
+    /* will cut off all unwanted outside content on the circle */
+    overflow: hidden;
+    width: 35vw;
+    height: 35vw;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* pseudo element to keep the page from scrolling due to the circle */
+.join-page-circle-1::before {
+    content: '';
+    transform: translateX(-20%);
+    border-radius: 50%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 128, 0.1);
+}
+
+.join-page-circle-2 {
+    position: absolute;
+    /* will cut off all unwanted outside content on the circle */
+    overflow: hidden;
+    width: 30vw;
+    height: 30vw;
+    top: 0;
+    left: 20vw;
+    z-index: -1;
+}
+
+/* pseudo element to keep the page from scrolling due to the circle */
+.join-page-circle-2::before {
+    content: '';
+    transform: translateY(-30%);
+    border-radius: 50%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(23, 98, 167, 0.1);
+}

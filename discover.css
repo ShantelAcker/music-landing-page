@@ -38,11 +38,16 @@
     .discover-main-section {
         flex-direction: column;
         justify-content: center;
+        text-align: center;
     }
 
     .discover-main-section .covers-image {
         margin-top: 2rem;
         height: 30vh;
         width: auto;
+    }
+
+    .icon-section {
+        justify-content: center;
     }
 }

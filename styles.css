@@ -111,4 +111,15 @@ body {
     border-radius: .5rem;
     text-decoration: none;
     font-size: 1.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2180d8;
+}
+
+.btn:focus {
+    background-color: #2796ff;
 }
